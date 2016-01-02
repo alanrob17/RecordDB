@@ -187,3 +187,7 @@ FakesAssemblies/
 GeneratedArtifacts/
 _Pvt_Extensions/
 ModelManifest.xml
+
+# Stop the Web.config's and app.config's from being uploaded
+web.config
+app.config

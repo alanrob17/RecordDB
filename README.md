@@ -1,4 +1,4 @@
-# RecordDB
+# Record DB
 
 This is my Record Database code.
 

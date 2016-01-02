@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecordDB", "RecordDB\RecordDB.csproj", "{4FFE8552-1F89-4E49-AA42-3FE55FA53437}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecordDAL", "RecordDAL\RecordDAL.csproj", "{86B0E12C-0ACE-4E79-A622-5A05BDEE704C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecordTest", "RecordTest\RecordTest.csproj", "{87B1A4DB-0577-4FBD-A156-7077B71E5FAA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4FFE8552-1F89-4E49-AA42-3FE55FA53437}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FFE8552-1F89-4E49-AA42-3FE55FA53437}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FFE8552-1F89-4E49-AA42-3FE55FA53437}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FFE8552-1F89-4E49-AA42-3FE55FA53437}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86B0E12C-0ACE-4E79-A622-5A05BDEE704C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86B0E12C-0ACE-4E79-A622-5A05BDEE704C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86B0E12C-0ACE-4E79-A622-5A05BDEE704C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86B0E12C-0ACE-4E79-A622-5A05BDEE704C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{87B1A4DB-0577-4FBD-A156-7077B71E5FAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87B1A4DB-0577-4FBD-A156-7077B71E5FAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87B1A4DB-0577-4FBD-A156-7077B71E5FAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87B1A4DB-0577-4FBD-A156-7077B71E5FAA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

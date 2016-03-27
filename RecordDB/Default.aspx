@@ -66,6 +66,10 @@
 				<td>&nbsp;</td>
 				</tr>
 				<tr>
+				<td><a href='GetArtist/2016'>View 2016 Titles</a></td>
+				<td>View all albums bought in 2016.</td>
+				</tr>
+				<tr>
 				<td><a href='GetArtist/2015'>View 2015 Titles</a></td>
 				<td>View all albums bought in 2015.</td>
 				</tr>

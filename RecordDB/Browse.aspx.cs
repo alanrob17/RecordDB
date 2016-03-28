@@ -79,6 +79,9 @@ namespace RecordDB
                     case "blurays":
                         pageHeaderLabel.Text = "All Blu-rays";
                         break;
+                    case "2016":
+                        pageHeaderLabel.Text = "All Records bought in 2016";
+                        break;
                     case "2015":
                         pageHeaderLabel.Text = "All Records bought in 2015";
                         break;

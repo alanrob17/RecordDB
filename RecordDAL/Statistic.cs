@@ -171,6 +171,21 @@
         public decimal Av2015 { get; set; }
 
         /// <summary>
+        /// Gets or sets the Disks2016
+        /// </summary>
+        public int Disks2016 { get; set; }
+
+        /// <summary>
+        /// Gets or sets the Cost2016
+        /// </summary>
+        public decimal Cost2016 { get; set; }
+
+        /// <summary>
+        /// Gets or sets the Av2016
+        /// </summary>
+        public decimal Av2016 { get; set; }
+
+        /// <summary>
         /// Gets or sets the TotalRecords
         /// </summary>
         public int TotalRecords { get; set; }

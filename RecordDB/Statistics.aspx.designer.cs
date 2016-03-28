@@ -31,6 +31,33 @@ namespace RecordDB {
         protected global::System.Web.UI.WebControls.TextBox textClock;
         
         /// <summary>
+        /// disks2016Label control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label disks2016Label;
+        
+        /// <summary>
+        /// cost2016Label control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label cost2016Label;
+        
+        /// <summary>
+        /// av2016Label control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label av2016Label;
+        
+        /// <summary>
         /// disks2015Label control.
         /// </summary>
         /// <remarks>

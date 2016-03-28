@@ -27,6 +27,22 @@
 </tr>
 </thead>
 <tr>
+<td><strong>Number of Discs bought in 2016</strong></td>
+<td><asp:Label runat="server" ID="disks2016Label"></asp:Label></td>
+</tr>
+<tr>
+<td><strong>Total Amount spent on Discs in 2016</strong></td>
+<td><asp:Label runat="server" ID="cost2016Label"></asp:Label></td>
+</tr>
+<tr>
+<td><strong>Average cost of a Disc in 2016</strong></td>
+<td><asp:Label runat="server" ID="av2016Label"></asp:Label></td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
 <td><strong>Number of Discs bought in 2015</strong></td>
 <td><asp:Label runat="server" ID="disks2015Label"></asp:Label></td>
 </tr>

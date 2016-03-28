@@ -31,6 +31,9 @@ namespace RecordDB
             var statisticData = new StatisticData();
             var statistics = statisticData.GetStatistics();
 
+                disks2016Label.Text = statistics.Disks2016.ToString(CultureInfo.InvariantCulture);
+            cost2016Label.Text = statistics.Cost2016.ToString("C");
+            av2016Label.Text = statistics.Av2016.ToString("C");
             disks2015Label.Text = statistics.Disks2015.ToString(CultureInfo.InvariantCulture);
             cost2015Label.Text = statistics.Cost2015.ToString("C");
             av2015Label.Text = statistics.Av2015.ToString("C");

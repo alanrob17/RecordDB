@@ -478,7 +478,51 @@ namespace RecordDAL
 
                 cn.Close();
             }
+            
+            var disks2016 = 0;
+            using (var cn = new SqlConnection(AppSettings.Instance.ConnectString))
+            {
+                // query for Number of CD's bought in 2016                
+                var getValue = new SqlCommand("select sum(discs) from record where bought > '31-Dec-2015' and bought < '01-Jan-2017'", cn);
 
+                cn.Open();
+                if (getValue.ExecuteScalar() != DBNull.Value)
+                {
+                    disks2016 = int.Parse(getValue.ExecuteScalar().ToString());
+                }
+
+                cn.Close();
+                statistics.Disks2016 = disks2016;
+            }
+            
+            using (var cn = new SqlConnection(AppSettings.Instance.ConnectString))
+            {
+                // query for amount spent on CD's in 2016
+                var cost2016 = 0.0m;
+                var getValue = new SqlCommand("select sum(cost) from record where bought > '31-Dec-2015' and bought < '01-Jan-2017'", cn);
+
+                cn.Open();
+                if (getValue.ExecuteScalar() != DBNull.Value)
+                {
+                    cost2016 = decimal.Parse(getValue.ExecuteScalar().ToString());
+                }
+
+                // this is to stop a divide by zero error if nothing has been bought
+                if (cost2016 > 1)
+                {
+                    statistics.Cost2016 = cost2016;
+                    var av2016 = cost2016 / disks2016;
+                    statistics.Av2016 = av2016;
+                }
+                else
+                {
+                    statistics.Cost2016 = 0.00m;
+                    statistics.Av2016 = 0.00m;
+                }
+
+                cn.Close();
+            }
+            
             using (var cn = new SqlConnection(AppSettings.Instance.ConnectString))
             {
                 // query for Number of records

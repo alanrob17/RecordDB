@@ -31,7 +31,10 @@ namespace RecordDB
             var statisticData = new StatisticData();
             var statistics = statisticData.GetStatistics();
 
-                disks2016Label.Text = statistics.Disks2016.ToString(CultureInfo.InvariantCulture);
+            disks2017Label.Text = statistics.Disks2017.ToString(CultureInfo.InvariantCulture);
+            cost2017Label.Text = statistics.Cost2017.ToString("C");
+            av2017Label.Text = statistics.Av2017.ToString("C");
+            disks2016Label.Text = statistics.Disks2016.ToString(CultureInfo.InvariantCulture);
             cost2016Label.Text = statistics.Cost2016.ToString("C");
             av2016Label.Text = statistics.Av2016.ToString("C");
             disks2015Label.Text = statistics.Disks2015.ToString(CultureInfo.InvariantCulture);
@@ -46,9 +49,6 @@ namespace RecordDB
             disks2012Label.Text = statistics.Disks2012.ToString(CultureInfo.InvariantCulture);
             cost2012Label.Text = statistics.Cost2012.ToString("C");
             av2012Label.Text = statistics.Av2012.ToString("C");
-            disks2011Label.Text = statistics.Disks2011.ToString(CultureInfo.InvariantCulture);
-            cost2011Label.Text = statistics.Cost2011.ToString("C");
-            av2011Label.Text = statistics.Av2011.ToString("C");
             totalCDsLabel.Text = statistics.TotalCDs.ToString(CultureInfo.InvariantCulture);
             cDCostLabel.Text = statistics.CDCost.ToString("C");
             avCDCostLabel.Text = statistics.AvCDCost.ToString("C");

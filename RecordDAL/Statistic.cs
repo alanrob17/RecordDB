@@ -96,21 +96,6 @@
         public decimal TotalCost { get; set; }
 
         /// <summary>
-        /// Gets or sets the Disks2011
-        /// </summary>
-        public int Disks2011 { get; set; }
-
-        /// <summary>
-        /// Gets or sets the Cost2011
-        /// </summary>
-        public decimal Cost2011 { get; set; }
-
-        /// <summary>
-        /// Gets or sets the Av2011
-        /// </summary>
-        public decimal Av2011 { get; set; }
-
-        /// <summary>
         /// Gets or sets the Disks2012
         /// </summary>
         public int Disks2012 { get; set; }
@@ -184,6 +169,22 @@
         /// Gets or sets the Av2016
         /// </summary>
         public decimal Av2016 { get; set; }
+
+        /// <summary>
+        /// Gets or sets the Disks2017
+        /// </summary>
+        public int Disks2017 { get; set; }
+
+        /// <summary>
+        /// Gets or sets the Cost2017
+        /// </summary>
+        public decimal Cost2017 { get; set; }
+
+        /// <summary>
+        /// Gets or sets the Av2017
+        /// </summary>
+        public decimal Av2017 { get; set; }
+
 
         /// <summary>
         /// Gets or sets the TotalRecords

@@ -147,8 +147,8 @@ namespace RecordDAL
                             Rating = dr["Rating"].ToString(),
                             Discs = Convert.ToInt32(dr["Discs"]),
                             Media = dr["Media"].ToString(),
-                            // Bought returns a string -- have to convert
 
+                            // Bought returns a string -- have to convert
                             Bought = DataConvert.ConvertTo<DateTime>(dr["Bought"], default(DateTime)),
                             Cost = DataConvert.ConvertTo<decimal>(dr["Cost"], default(decimal)),
                             CoverName = dr["CoverName"].ToString(),

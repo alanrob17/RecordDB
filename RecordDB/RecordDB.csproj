@@ -131,6 +131,7 @@
     <None Include="Properties\PublishProfiles\alanr %283%29.pubxml" />
     <None Include="Properties\PublishProfiles\alanr %284%29.pubxml" />
     <None Include="Properties\PublishProfiles\alanr.pubxml" />
+    <None Include="Properties\PublishProfiles\AlanrLocal.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

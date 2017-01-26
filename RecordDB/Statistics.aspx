@@ -27,6 +27,23 @@
 </tr>
 </thead>
 <tr>
+<td><strong>Number of Discs bought in 2017</strong></td>
+<td><asp:Label runat="server" ID="disks2017Label"></asp:Label></td>
+</tr>
+<tr>
+<td><strong>Total Amount spent on Discs in 2017</strong></td>
+<td><asp:Label runat="server" ID="cost2017Label"></asp:Label></td>
+</tr>
+<tr>
+<td><strong>Average cost of a Disc in 2017</strong></td>
+<td><asp:Label runat="server" ID="av2017Label"></asp:Label></td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<tr>
 <td><strong>Number of Discs bought in 2016</strong></td>
 <td><asp:Label runat="server" ID="disks2016Label"></asp:Label></td>
 </tr>
@@ -101,22 +118,6 @@
 <tr>
 <td><strong>Average cost of a Disc in 2012</strong></td>
 <td><asp:Label runat="server" ID="av2012Label"></asp:Label></td>
-</tr>
-<tr>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-</tr>                      
-<tr>
-<td><strong>Number of Discs bought in 2011</strong></td>
-<td><asp:Label runat="server" ID="disks2011Label"></asp:Label></td>
-</tr>
-<tr>
-<td><strong>Total Amount spent on Discs in 2011</strong></td>
-<td><asp:Label runat="server" ID="cost2011Label"></asp:Label></td>
-</tr>
-<tr>
-<td><strong>Average cost of a Disc in 2011</strong></td>
-<td><asp:Label runat="server" ID="av2011Label"></asp:Label></td>
 </tr>
 <tr>
 <td>&nbsp;</td>

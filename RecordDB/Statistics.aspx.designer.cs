@@ -31,6 +31,33 @@ namespace RecordDB {
         protected global::System.Web.UI.WebControls.TextBox textClock;
         
         /// <summary>
+        /// disks2017Label control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label disks2017Label;
+        
+        /// <summary>
+        /// cost2017Label control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label cost2017Label;
+        
+        /// <summary>
+        /// av2017Label control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label av2017Label;
+        
+        /// <summary>
         /// disks2016Label control.
         /// </summary>
         /// <remarks>
@@ -164,33 +191,6 @@ namespace RecordDB {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label av2012Label;
-        
-        /// <summary>
-        /// disks2011Label control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label disks2011Label;
-        
-        /// <summary>
-        /// cost2011Label control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label cost2011Label;
-        
-        /// <summary>
-        /// av2011Label control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label av2011Label;
         
         /// <summary>
         /// totalCDsLabel control.

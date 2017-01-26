@@ -294,41 +294,6 @@ namespace RecordDAL
                 statistics.TotalCost = totalCost;
             }
 
-            var disks2011 = 0;
-            using (var cn = new SqlConnection(AppSettings.Instance.ConnectString))
-            {
-                // query for Number of CD's bought in 2011               
-                var getValue = new SqlCommand("select sum(discs) from record where bought > '31-Dec-2010' and bought < '01-Jan-2012'", cn);
-
-                cn.Open();
-                if (getValue.ExecuteScalar() != DBNull.Value)
-                {
-                    disks2011 = int.Parse(getValue.ExecuteScalar().ToString());
-                }
-
-                cn.Close();
-                statistics.Disks2011 = disks2011;
-            }
-
-            var cost2011 = 0.0m;
-            using (var cn = new SqlConnection(AppSettings.Instance.ConnectString))
-            {
-                // query for amount spent on CD's in 2011               
-                var getValue = new SqlCommand("select sum(cost) from record where bought > '31-Dec-2010' and bought < '01-Jan-2012'", cn);
-
-                cn.Open();
-                if (getValue.ExecuteScalar() != DBNull.Value)
-                {
-                    cost2011 = decimal.Parse(getValue.ExecuteScalar().ToString());
-                }
-
-                cn.Close();               
-                statistics.Cost2011 = cost2011;
-            }
-
-            var av2011 = cost2011 / disks2011;
-            statistics.Av2011 = av2011;
-
             var disks2012 = 0;
             using (var cn = new SqlConnection(AppSettings.Instance.ConnectString))
             {
@@ -518,6 +483,50 @@ namespace RecordDAL
                 {
                     statistics.Cost2016 = 0.00m;
                     statistics.Av2016 = 0.00m;
+                }
+
+                cn.Close();
+            }
+
+            var disks2017 = 0;
+            using (var cn = new SqlConnection(AppSettings.Instance.ConnectString))
+            {
+                // query for Number of CD's bought in 2017               
+                var getValue = new SqlCommand("select sum(discs) from record where bought > '31-Dec-2016' and bought < '01-Jan-2018'", cn);
+
+                cn.Open();
+                if (getValue.ExecuteScalar() != DBNull.Value)
+                {
+                    disks2017 = int.Parse(getValue.ExecuteScalar().ToString());
+                }
+
+                cn.Close();
+                statistics.Disks2017 = disks2017;
+            }
+
+            using (var cn = new SqlConnection(AppSettings.Instance.ConnectString))
+            {
+                // query for amount spent on CD's in 2017
+                var cost2017 = 0.0m;
+                var getValue = new SqlCommand("select sum(cost) from record where bought > '31-Dec-2016' and bought < '01-Jan-2018'", cn);
+
+                cn.Open();
+                if (getValue.ExecuteScalar() != DBNull.Value)
+                {
+                    cost2017 = decimal.Parse(getValue.ExecuteScalar().ToString());
+                }
+
+                // this is to stop a divide by zero error if nothing has been bought
+                if (cost2017 > 1)
+                {
+                    statistics.Cost2017 = cost2017;
+                    var av2017 = cost2017 / disks2017;
+                    statistics.Av2017 = av2017;
+                }
+                else
+                {
+                    statistics.Cost2017 = 0.00m;
+                    statistics.Av2017 = 0.00m;
                 }
 
                 cn.Close();

@@ -17,6 +17,11 @@ namespace RecordDB
 
     public partial class Browse : System.Web.UI.Page
     {
+        /// <summary>
+        /// The page load.
+        /// </summary>
+        /// <param name="sender">The sender.</param>
+        /// <param name="e">The event arguments.</param>
         protected void Page_Load(object sender, EventArgs e)
         {
             var aid = 0;           
@@ -79,6 +84,9 @@ namespace RecordDB
                     case "blurays":
                         pageHeaderLabel.Text = "All Blu-rays";
                         break;
+                    case "2017":
+                        pageHeaderLabel.Text = "All Records bought in 2017";
+                        break;
                     case "2016":
                         pageHeaderLabel.Text = "All Records bought in 2016";
                         break;
@@ -93,12 +101,6 @@ namespace RecordDB
                         break;
                     case "2012":
                         pageHeaderLabel.Text = "All Records bought in 2012";
-                        break;
-                    case "2011":
-                        pageHeaderLabel.Text = "All Records bought in 2011";
-                        break;
-                    case "2010":
-                        pageHeaderLabel.Text = "All Records bought in 2010";
                         break;
                     case "1111":
                         pageHeaderLabel.Text = "Indispensible records";

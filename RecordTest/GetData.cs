@@ -25,7 +25,7 @@ namespace RecordTest
     {
         public static void Main(string[] args)
         {
-            // ShowArtists();
+            ShowArtists();
             // GetArtistList();
             // Select();
             // GetSingleArtist(114);
@@ -58,8 +58,7 @@ namespace RecordTest
             // GetRecordedYearNumber();
             // NoRecordReviews();
             // ToShortDate();
-
-            DeleteRecord();  
+            // DeleteRecord();  
         }
 
         /// <summary>
